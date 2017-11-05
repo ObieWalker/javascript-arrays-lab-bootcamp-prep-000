@@ -23,6 +23,7 @@ function destructivelyRemoveFirstKitten(){
 }
 
 function appendKitten(name){
-  var newArray = kittens.unshift(name)
+  var newArray = [...kittens]
+  newArray.push(name)
   return newArray
 }
